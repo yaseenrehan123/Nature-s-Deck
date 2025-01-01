@@ -1,0 +1,207 @@
+.nav-bar{
+    background-color: black;
+    overflow: hidden;
+}
+.nav-bar-list{
+    list-style-type: none;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar-elements{
+    font-size: larger;
+    font-weight: bolder;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.nav-bar-elements:hover{
+    background-color: grey;
+}
+.a-removed-style{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1e272e;
+}
+.card-container{ /* Container to contain all the cards */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.card{ /* Card CSS */
+    max-width: 300px;
+    width: 100%;
+    transition: box-shadow 0.15s,transform 0.15s;
+    flex: 1 1 0;
+    margin: 50px;
+    flex-wrap: wrap;
+    min-width: 300px; 
+}
+.card:hover{ 
+    box-shadow: 2px 2px 10px black;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.card-image-container{ /* Container to contain card's image */
+    max-width: 300px;
+    width: 300px;
+    max-height: 200px;
+    height: 200px;
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+.card-image{ /* Cards's image */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.text-align-center{
+    text-align: center;
+}
+.center-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-content{ /* Contains card's content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-details{ /* Contain's card's details/description */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.read-more-btn{ /* Button to show details */
+    text-align: center;
+    background-color: #292f33;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    transition: box-shadow 0.15s, transform 0.15s;
+    display: inline-block;
+    margin-bottom: 5px;
+    
+}
+.read-more-btn:hover{
+    box-shadow: 2px 2px 10px black;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.card-name{ /* Card's name text */
+    color: white;
+    text-align: center;
+}
+.color-white{
+    color: white;
+}
+.object-position-center{
+    object-position: center;
+}
+.object-position-left{
+    object-position: left;
+}
+.overview-container,.contents-container,.questions-container{
+    margin-bottom: 20px;
+    
+}
+.overview-heading,.contents-heading,.questions-heading{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: #4b6584;
+    padding: 8px 15px;
+    margin-bottom: 8px;
+}
+.overview-heading:hover,.contents-heading:hover,.questions-heading:hover{
+    cursor: pointer;
+}
+.over-view-text,.question-text{
+    font-size: 15px;
+    color: white;
+    font-family: Roboto-Light;
+    margin: 0px 15px 10px 15px;
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+.contents-content{ /* Contains the content about the content section and acts as a colorful b.g */
+    background-color: #8395a7;
+    width: 300px;
+    padding: 2px;
+    transition: box-shadow 0.15s , transform 0.15s;
+}
+.contents-content:hover{
+    box-shadow: 2px 2px 10px black;
+    transform: scale(1.05);
+}
+.contents-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    margin: 0px;
+    padding: 0px;
+
+}
+.contents-text-container{
+    border: solid black 2px;
+    vertical-align: top;
+    padding: 8px;
+    transition: box-shadow 0.15s,background-color 0.15s,transform 0.15s;
+    margin: 0px;
+}
+.contents-text-container:hover{
+    box-shadow: 2px 2px 10px black;
+    background-color: grey;
+    cursor: pointer;
+}
+.contents-text-container:active{
+    transform: scale(0.98);
+}
+.contents-text{
+    font-size: 20px;
+    color: white;
+    font-family: Roboto-Light;
+    margin: 0px;
+    padding: 0px;
+}
+.question-contents{
+    margin: 0px;
+    padding: 0px;
+}
+.question{
+    margin: 20px 0px;
+}
+.question:hover{
+    cursor: pointer;
+}
+.question-title{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #718093;
+    color: white;
+    padding: 8px 4px;
+}
+.font-family-roboto{
+    font-family: Roboto-Light;
+}
+.get-started-container{
+    margin: 150px 0px 30px 0px;
+}
