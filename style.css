@@ -1,6 +1,10 @@
 .nav-bar{
     background-color: black;
     overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 .nav-bar-list{
     list-style-type: none;
@@ -23,8 +27,8 @@
     color: inherit;
 }
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 80px 0px 0px 0px;
     background-color: #1e272e;
 }
 .card-container{ /* Container to contain all the cards */
@@ -41,6 +45,21 @@ body{
     margin: 50px;
     flex-wrap: wrap;
     min-width: 300px; 
+    position: relative; /* Ensure the ::after pseudo-element is positioned relative to .card */
+}
+.card::after{
+    content: '';
+    background-color: black;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    transition: 180ms ease-in-out ;
+}
+.card:hover::after{
+    height: 100%;
 }
 .card:hover{ 
     box-shadow: 2px 2px 10px black;
@@ -58,11 +77,13 @@ body{
     align-items: center;
     flex-direction: column;
     margin-bottom: 8px;
+    z-index: 1;
 }
 .card-image{ /* Cards's image */
     object-fit: cover;
     height: 100%;
     width: 100%;
+    z-index: inherit;
 }
 .text-align-center{
     text-align: center;
@@ -77,6 +98,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 1;
 }
 .card-details{ /* Contain's card's details/description */
     display: flex;
@@ -84,6 +106,7 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    z-index: inherit;
 }
 .read-more-btn{ /* Button to show details */
     text-align: center;
@@ -105,6 +128,7 @@ body{
 .card-name{ /* Card's name text */
     color: white;
     text-align: center;
+    z-index: inherit;
 }
 .color-white{
     color: white;
@@ -203,5 +227,32 @@ body{
     font-family: Roboto-Light;
 }
 .get-started-container{
-    margin: 150px 0px 30px 0px;
+    margin: 150px 0px 80px 0px;
+    clear: both;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+.decoration-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.float-image-container{
+    overflow: hidden;
+}
+.float-image-text{
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+.about-me-section{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto-Light;
+    text-align: center;
+    padding: 30px;
 }
