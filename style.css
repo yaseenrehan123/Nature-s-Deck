@@ -91,6 +91,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3,300px);
     justify-items: center;
+    align-items: flex-start;
     gap: 50px;
     margin: 5% 0px;
 }
