@@ -4,52 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page-3</title>
-      <!--CSS-->
-      <link rel="stylesheet" href="/Nature-s-Deck/style.css">
-      <!--Favicon-->
-      <link rel = "icon" href="images/favicon.jpg">
-      <!--Import Boxicons-->
-      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-      <!--Javascript-->
-      <script src="/Nature-s-Deck/app.js" defer></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="/Nature-s-Deck/styles/style.css">
+    <!--Favicon-->
+    <link rel = "icon" href="images/favicon.jpg">
+    <!--Import Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Javascript-->
+    <script src="../js/app.js" defer type="module"></script>
 </head>
 <body>
     
-    <div class="pagination">
-   
-        <ul>
-            <li class="pagination-arrow-links">
-                <i class='bx bx-left-arrow-alt btn-arrow'></i>
-            </li>
-            
-                <a href="page3.html">
-                    <li class="pagination-link active-pagination-link">
-                        3
-                    </li>
-                </a>
-            
-                <a href="page4.html">
-                    <li class="pagination-link">
-                        4
-                    </li>
-                </a>
+    <div class="card-section">
+        <div class="card-container" data-cards='[
+    "Cinnamon", "Nutmeg", "Sunflower", "Rose", "Tulip", "Marigold", "Hibiscus", "Jasmine",
+    "Lotus", "Orchid", "Daisy", "Dandelion", "Peony", "Carnation", "Violet", "Chrysanthemum",
+    "Dahlia", "Poppy", "Lilac", "Begonia", "Petunia", "Aloe Vera", "Baobab", "Neem",
+    "Eucalyptus", "Banyan", "Maple", "Willow", "Oak", "Pine"
+]'></div>
 
-                <a href="page5.html">
-                    <li class="pagination-link">
-                        5
-                    </li>
-                </a>
-
-                <a href="page6.html">
-                    <li class="pagination-link" >
-                        6
-                    </li>
-                </a>
-
-            <li class="pagination-arrow-links">
-                <i class='bx bx-right-arrow-alt btn-arrow pagination-arrow-links' ></i>
-            </li>
-        </ul>
-
+    </div>
+    <div class="pagination" data-current-page="3"></div>
+        
 </body>
 </html>

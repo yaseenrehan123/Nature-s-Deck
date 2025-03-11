@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
+     <!--CSS-->
+     <link rel="stylesheet" href="styles/style.css">
+     <link rel="stylesheet" href="styles/contact.css">
+     <!--Favicon-->
+     <link rel = "icon" href="images/favicon.jpg">
+     <!--Import Boxicons-->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!--Javascript-->
+     <script src="js/app.js" defer type="module"></script>
 </head>
 <body>
-    
+    <section class="contact-section">
+        <div class="intro-text color-white font-family-roboto">
+            <p>Interested in contacting me? I am available at the following platforms listed below!</p>
+        </div>
+        
+        <div class="contact-icon-holder">
+            <div class="contact-icon">
+                <a href="https://github.com/yaseenrehan123" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </div>
+            <div class="contact-icon">
+                <a href="https://www.youtube.com/@magstargaming2193/featured" target="_blank">
+                    <i class='bx bxl-youtube' ></i>
+                </a>
+            </div>
+            <div class="contact-icon">
+                <a href="mailto:yr6190457@gmail.com" target="_blank">
+                    <i class='bx bxl-gmail' ></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <div class="contact-form-heading-container">
+                <h1 class="contact-form-heading">Get In Touch</h1>
+                <div class="contact-form-heading-underline"></div>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="eaeaae61-61d1-4c75-93ac-06e8f2358d23">
+                <input type="text" class="contact-form-element" placeholder="Your Name" required name="name">
+                <input type="email" class="contact-form-element" placeholder="Your Email" required name="email">
+                <textarea name="" placeholder="Your Message" required class="contact-form-message"name="message"></textarea>
+                <button type="submit" class="form-submit-btn hidden-effect">
+                    Submit ->
+                </button>
+            </form>
+            
+        </div>
+        
+    </section>
 </body>
 </html>

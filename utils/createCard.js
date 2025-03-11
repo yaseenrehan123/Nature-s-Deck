@@ -22,7 +22,10 @@ export function createCard(cardName,container){
     container.insertAdjacentHTML("beforeend",cardTemplate);        
 }
 export function createMultipleCards(cardNames, container) {
+    let cardNum = 0;
     cardNames.forEach(cardName => {
         createCard(cardName, container)
+        cardNum++;
     });
+    console.log(`Number of cards is: ${cardNum}`);
 }

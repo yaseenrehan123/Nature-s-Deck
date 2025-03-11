@@ -1,0 +1,108 @@
+.contact-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--default-text-color);
+    font-size: clamp(1.1rem,6vw,1.2rem);
+    gap: 20px;
+}
+.contact-icon-holder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: relative;
+}
+
+.contact-icon{
+    font-size: clamp(2.75rem,12vw,3rem);
+    color: green;
+    transition: color 0.15s;
+}
+.contact-icon a{
+    text-decoration: none;
+    color: inherit;
+}
+.contact-icon:hover{
+    color: #44bd32;
+    cursor: pointer;
+}
+.contact-form-container,.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.contact-form-element{
+    background-color: #222f39;
+    color: var(--default-text-color);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+}
+.contact-form-message{
+    background-color: #222f39;
+    color: var(--default-text-color);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Ensure long words or strings wrap */
+    word-break: break-word; /* Break long words if necessary */
+    resize: none;
+}
+.form-submit-btn{
+    width: 200px;
+    height: 60px;
+    padding: 8px 10px;
+    font-size: clamp(1.625rem,5vw,1.875rem);
+    font-weight: bolder;
+    font-family: Roboto;
+    text-align: center;
+    border-radius: 30px;
+     position: relative;
+     background-color: transparent;
+     outline: none;
+     border: none;
+ }
+ .form-submit-btn:hover{
+    cursor: pointer;
+}
+.form-submit-btn::before,.form-submit-btn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,#c0392b,#e67e22,#f1c40f,#f39c12,#1abc9c);
+    z-index: -1;
+    border-radius: 30px;
+}
+.form-submit-btn::after{
+    padding: 2px;
+    filter: blur(20px);
+}
+.contact-form-heading{
+    color: rgb(140, 122, 230);
+ }
+.contact-form-heading-underline{
+    background-color: rgb(140, 122, 230);
+    height: 3.7px;
+    width: 100%;
+    border-radius: 20px;
+}
+.contact-form-heading-container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.4px;
+}
