@@ -6,7 +6,7 @@ export const plantCards = [
     description: `The apple (Malus domestica) is a popular fruit tree known for its sweet,
     crisp apples and beautiful blossoms, 
     thriving in temperate climates.`,// description
-    pageLink: ""// card page link with details about that card
+    pageLink: "plantDetails.html?name=Apple"// card page link with details about that card
 },
 {
     name: "Mango",

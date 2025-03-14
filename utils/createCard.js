@@ -1,4 +1,4 @@
-import * as cardsDataScript from '../data/cards.js';
+import * as cardsDataScript from '../data/cardsData.js';
 export function createCard(cardName,container){
     // get the card we want to create through Normalization
     const card = cardsDataScript.plantCards.find(plantCard => plantCard.name === cardName);
@@ -13,7 +13,7 @@ export function createCard(cardName,container){
                         <summary class="read-more-btn">Read More</summary>
                         <p class="color-white">
                             ${card.description}
-                            <a href = "">Click here for more info.</a>
+                            <a href = "${card.pageLink}">Click here for more info.</a>
                         </p>
                     </details>
                 </section>
