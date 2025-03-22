@@ -29,3 +29,17 @@ export function createMultipleCards(cardNames, container) {
     });
     console.log(`Number of cards is: ${cardNum}`);
 }
+export function updateCards(matchingCards, container) {
+    // Remove all current cards
+    container.innerHTML = '';
+
+    // Generate only matching cards
+    createMultipleCards(matchingCards.map(card => card.name), container);
+}
+
+export function resetCards(container) {
+    container.innerHTML = '';
+    // Restore original set of cards (from dataset)
+    const cardNames = JSON.parse(container.dataset.cards);
+    createMultipleCards(cardNames, container);
+}
