@@ -1,0 +1,18 @@
+.searchbar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.searchbar{
+    background-color: black;
+    color: var(--default-text-color);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    width: clamp(200px, 30vw, 400px); /* Adjusts smoothly */
+    height: 40px;
+    font-family: Roboto;
+    flex: 1 1 1;
+}

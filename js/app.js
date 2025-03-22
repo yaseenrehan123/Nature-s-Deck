@@ -1,7 +1,9 @@
 import * as navbarScript from './navbar.js'
 import * as createCardUtil from '../utils/createCard.js'
 import * as paginationScript from './pagination.js';
+import * as searchbarScript from './searchbar.js';
 navbarScript.initializeNavbar();
+searchbarScript.initializeSearchbar();
 
 paginationScript.createPagination(".pagination", 5);
 
