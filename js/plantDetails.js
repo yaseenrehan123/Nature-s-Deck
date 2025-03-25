@@ -43,6 +43,7 @@ function displayPlantDetails() {
         img.src = imgSrc;
         img.alt = plant.name + " image";
         img.classList.add("plant-img");
+        img.loading = 'lazy';
         imagesContainer.appendChild(img);
     });
 }

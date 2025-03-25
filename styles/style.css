@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@font-face {
+    font-family: Roboto;
+    src: url(Nature-s-Deck\fonts\Roboto-VariableFont_wdth,wght.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -367,6 +369,13 @@ body{
 .active-pagination-link{
     background-image: linear-gradient(#4664b5, #3152a4,#6a89cc,#4b6397);
     background-position: 0 0;
+}
+.no-results-heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--default-text-color);
+    text-align: center;
 }
 @media (max-width:800px) {
     .card-container{

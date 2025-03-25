@@ -6,7 +6,7 @@ export const plantCards = [
     description: `The apple (Malus domestica) is a popular fruit tree known for its sweet,
     crisp apples and beautiful blossoms, 
     thriving in temperate climates.`,// description
-    pageLink: "/Nature-s-Deck/plantDetails.html?name=Apple"// card page link with details about that card
+    pageLink: "/Nature-s-Deck/plantDetails.html?name=Apple",// card page link with details about that card
 },
 {
     name: "Mango",
@@ -14,7 +14,7 @@ export const plantCards = [
     imgAlt: "This is a mango plant image",
     description: `The mango (Mangifera indica) is a tropical evergreen tree, 
     celebrated for its juicy, sweet fruit and fragrant blossoms.`,
-    pageLink: "/Nature-s-Deck/plantDetails.html?name=Mango" 
+    pageLink: "/Nature-s-Deck/plantDetails.html?name=Mango",
 },
 {
     name: "Potato",
@@ -22,7 +22,7 @@ export const plantCards = [
     imgAlt: "This is a potato plant image",
     description: `The potato (Solanum tuberosum) is a root vegetable widely cultivated 
     for its versatile, nutrient-rich tubers.`,
-    pageLink: "/Nature-s-Deck/plantDetails.html?name=Potato" 
+    pageLink: "/Nature-s-Deck/plantDetails.html?name=Potato",
 },
 {
     name: "Lemon",

@@ -5,7 +5,7 @@ export function createCard(cardName,container){
     console.log(card);
     const cardTemplate = `<div class="card">
                 <div class="card-image-container">
-                    <img src = "${card.imgSrc}" class="card-image" alt="${card.imgAlt}">
+                    <img src = "${card.imgSrc}" class="card-image" alt="${card.imgAlt}" loading = "lazy">
                 </div>
                 <section class="card-content">
                     <h1 class="card-name">${card.name}</h1>
